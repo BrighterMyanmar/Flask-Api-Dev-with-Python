@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container my-5">
+    <h1 class="text-center text-info">Create Category</h1>
+    <div class="col-md-6 offset-md-3">
+        <form method="post"  enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="mb-3">
+                <label for="files" class="form-label">Category Image</label>
+                <input class="form-control" type="file" id="files" name="files" multiple>
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

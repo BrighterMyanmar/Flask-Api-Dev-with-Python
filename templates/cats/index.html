@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <h1>All Categories</h1>
+
+    {% for cat in cats %}
+        <p>{{cat.name}}</p>
+    {% endfor %}
+
+{% endblock %}
